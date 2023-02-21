@@ -1,6 +1,7 @@
 import torch
 from torch.optim.optimizer import Optimizer
 
+#codebase on https://github.com/lucidrains/lion-pytorch
 
 class Lion(Optimizer):
     def __init__( self, params, lr: float = 1e-4, betas: tuple= (0.9, 0.99), weight_decay: float = 0.0):
